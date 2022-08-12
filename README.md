@@ -1,17 +1,17 @@
 # Indonesian Speech Recognition
 
 ## Introduction
-The goal of this project is to develop an automatic subtitle generation system for Indonesian news broadcast videos. Using the Kaldi and SRILM language modeling tools, the acoustic model and language model are trained. React.js is used to build the web interface. ([moalghifari/news-asr-frontend](https://github.com/moalghifari/news-asr-frontend)).
+The goal of this project is to develop an automatic subtitle generation system for Indonesian news broadcast videos. Using the Kaldi and SRILM language modeling tools, the acoustic model and language model are trained. React.js is used to build the web interface. ([moalghifari/indonesian-asr-frontend](https://github.com/moalghifari/indonesian-asr-frontend)).
 
 The recordings of Kompas TV news broadcasts were manually annotated using Audacity to create the speech corpus. A text corpus which was collected by ILPS was used to build a dictionary and a n-gram language model.
 
 ## Requirements
 - python2.7.13
 - NVIDIA + CUDA
-- kaldi
+- Kaldi
 
 ## Installation
-The acoustic model and the linguistic model must both be trained in order to build an ASR. Here are the steps:
+The acoustic model and the language model must both be trained in order to build an ASR. Here are the steps:
 
 ### Language Model Training
 The language model is trained using trigram (3-gram)
@@ -37,7 +37,7 @@ source path.sh
 ```
 
 ## Usage
-Here are the steps to run the backend service. To run the web interface check this repositories [moalghifari/news-asr-frontend](https://github.com/moalghifari/news-asr-frontend).
+Here are the steps to run the backend service. To run the web interface check this repositories [moalghifari/indonesian-asr-frontend](https://github.com/moalghifari/indonesian-asr-frontend).
 ```
 virtualenv venv
 ```
