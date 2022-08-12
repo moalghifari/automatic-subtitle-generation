@@ -3,7 +3,7 @@
 ## Introduction
 The goal of this project is to develop an automatic subtitle generation system for Indonesian news broadcast videos. Using the Kaldi and SRILM language modeling tools, the acoustic model and language model are trained. React.js is used to build the web interface. ([moalghifari/news-asr-frontend](https://github.com/moalghifari/news-asr-frontend)).
 
-The recordings of Kompas TV news broadcasts were manually annotated using Audacity to create the speech corpus. A text corpus which was collected by ILPS was used to build a dictionary and a n-gram language model. You may get more information on data preparation [here](data_preparation.md)
+The recordings of Kompas TV news broadcasts were manually annotated using Audacity to create the speech corpus. A text corpus which was collected by ILPS was used to build a dictionary and a n-gram language model.
 
 ## Requirements
 - python2.7.13
@@ -22,7 +22,7 @@ source path.sh
 cd local/ngramlm
 ```
 ```
-./create_lm.sh <text corpus path that used to build language model>
+./create_lm.sh <text corpus dirs that used to build language model>
 ./create_lm.sh train_st,train_nst,train_mix,ind_kompas_2017-2018,ind_kompas_2001-2002,ind_tempo_2001-2002
 ```
 
