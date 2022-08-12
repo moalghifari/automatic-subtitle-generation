@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-# Based mostly on the TIMIT recipe. The description of the database:
-# https://github.com/moalghifari/indonesian-asr/data_preparation.md
-
 train_folder="$(local/utils/joint_data.sh $1)"
 test_folder="$(local/utils/joint_data.sh $2)"
 lm=$3
