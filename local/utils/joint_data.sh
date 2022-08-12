@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 folder=$1
 IFS=',' read -r -a folder_array <<< "$folder"
 if [[ "${#folder_array[@]}" -ge 2 ]]; then
