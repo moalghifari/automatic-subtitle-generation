@@ -3,8 +3,8 @@
 # Based mostly on the TIMIT recipe. The description of the database:
 # https://github.com/moalghifari/indonesian-asr/data_preparation.md
 
-train_folder="$(local/joint_data.sh $1)"
-test_folder="$(local/joint_data.sh $2)"
+train_folder="$(local/utils/joint_data.sh $1)"
+test_folder="$(local/utils/joint_data.sh $2)"
 lm=$3
 
 rm -rf exp mfcc
@@ -27,22 +27,22 @@ done
 echo ============================================================================
 echo "                     MonoPhone Training & Decoding                        "
 echo ============================================================================
-local/train_monophone.sh $train_folder $test_folder $lm || exit 1;
+local/gmm/train_monophone.sh $train_folder $test_folder $lm || exit 1;
 
 echo ============================================================================
 echo "           tri1 : Deltas + Delta-Deltas Training & Decoding               "
 echo ============================================================================
-local/train_triphones_delta.sh $train_folder $test_folder $lm || exit 1;
+local/gmm/train_triphones_delta.sh $train_folder $test_folder $lm || exit 1;
 
 echo ============================================================================
 echo "                 tri2 : LDA + MLLT Training & Decoding                    "
 echo ============================================================================
-local/train_triphones_lda_mllt.sh $train_folder $test_folder $lm || exit 1;
+local/gmm/train_triphones_lda_mllt.sh $train_folder $test_folder $lm || exit 1;
 
 echo ============================================================================
 echo "              tri3 : LDA + MLLT + SAT Training & Decoding                 "
 echo ============================================================================
-local/train_triphones_sat_fmllr.sh $train_folder $test_folder $lm || exit 1;
+local/gmm/train_triphones_sat_fmllr.sh $train_folder $test_folder $lm || exit 1;
 
 echo ============================================================================
 echo "               DNN Hybrid Training & Decoding (Karel's recipe)            "
