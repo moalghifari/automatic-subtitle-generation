@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import os
 
 nonsil = open("nonsilence_phones.txt", "r")
