@@ -1,0 +1,16 @@
+data/
+manual_lexicon
+semi_manual_lexicon
+lexicon
+generated_lexicon
+wav
+.env
+exp/
+mfcc/
+data-fbank/
+data-fmllr-tri3/
+model/
+transcriptions/
+uploads/
+input_wav/
+*.pyc
