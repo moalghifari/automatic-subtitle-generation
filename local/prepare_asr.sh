@@ -2,6 +2,7 @@ cd ..
 
 mkdir model model/tri_delta model/tri_sat_fmllr model/dbn_dnn model/cnn_dbn-dnn_smbr
 mkdir transcriptions transcriptions/tri_delta transcriptions/tri_sat_fmllr transcriptions/dbn_dnn transcriptions/cnn_dbn-dnn_smbr
+mkdir uploads input_wav
 
 rm -R model/tri_delta
 mkdir -p model/tri_delta/graph
