@@ -39,7 +39,7 @@ source path.sh
 ## Usage
 Here are the steps to run the backend service. To run the web interface check this repositories [moalghifari/indonesian-asr-frontend](https://github.com/moalghifari/indonesian-asr-frontend).
 ```
-virtualenv venv
+virtualenv -p /usr/bin/python2.7 venv
 ```
 ```
 . venv/bin/activate
@@ -55,7 +55,7 @@ python app.py <model> <output_version>
 ```
 --model: the accoustic model
 - tri_delta
-- tri_lda_mllt_sat
+- tri_sat_fmllr
 - dbn_dnn
 - cnn_dbn-dnn_smbr
 
