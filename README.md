@@ -39,6 +39,15 @@ source path.sh
 ## Usage
 Here are the steps to run the backend service. To run the web interface check this repositories [moalghifari/indonesian-asr-frontend](https://github.com/moalghifari/indonesian-asr-frontend).
 ```
+cd local
+```
+```
+./prepare_asr.sh
+```
+```
+cd ..
+```
+```
 virtualenv -p /usr/bin/python2.7 venv
 ```
 ```
