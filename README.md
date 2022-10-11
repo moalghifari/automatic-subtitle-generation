@@ -7,7 +7,7 @@ The recordings of Kompas TV news broadcasts were manually annotated using Audaci
 
 ## Requirements
 - python2.7.13
-- NVIDIA + CUDA
+- GPU + CUDA
 - Kaldi
 
 ## Installation
