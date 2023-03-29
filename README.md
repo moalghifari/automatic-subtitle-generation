@@ -72,3 +72,10 @@ python app.py <model> <output_version>
 - 1 (split per 25 s)
 - 2 (split per word)
 - 3 (split per silence)
+
+## Screenshots
+![upload_video](https://user-images.githubusercontent.com/32153658/228688628-5ceaaaa0-5580-40f4-a21c-e2eadd626925.gif)
+![download_subtitles](https://user-images.githubusercontent.com/32153658/228688674-b41f57b8-7746-4147-98c7-06a8344652db.gif)
+
+## Video
+Youtube: https://www.youtube.com/watch?v=MJuHyfi0iNE
