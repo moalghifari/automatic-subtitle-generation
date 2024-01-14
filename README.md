@@ -37,7 +37,7 @@ source path.sh
 ```
 
 ## Usage
-Here are the steps to run the backend service. To run the web interface check this repositories [moalghifari/indonesian-asr-frontend](https://github.com/moalghifari/indonesian-asr-frontend).
+Here are the steps to run the backend service. To run the web interface check this repositories [moalghifari/automatic-subtitle-generation-client](https://github.com/moalghifari/automatic-subtitle-generation-client).
 ```
 cd local
 ```
